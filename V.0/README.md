@@ -58,7 +58,7 @@ To design a **smart HR data engine** capable of:
 flowchart TD
     A[Raw HR Data: CSV or Database] -->|Ingestion| B[ETL Scripts]
     B -->|Cleaned Dataset| C[Model Training Engine]
-    C -->|Trained Models (.pkl)| D[Streamlit Dashboard]
+    C -->|Trained Models / .pkl| D[Streamlit Dashboard]
     D -->|Predictions & Visuals| E[End User]
     C -->|Logs & Metrics| F[Monitoring / Logs]
     E -->|Input / Refresh| D
@@ -225,3 +225,4 @@ It lays the groundwork for **V.1**, which expands into API-backed cloud scalabil
 🌍 *Coimbatore, Tamil Nadu, India*  
 💼 *AI Developer | Data Scientist | HR Analytics Engineer*  
 🔗 [LinkedIn](https://www.linkedin.com/in/thirumarangk-ai) | [Portfolio](https://maranthiru180.wixsite.com/my-site)
+
