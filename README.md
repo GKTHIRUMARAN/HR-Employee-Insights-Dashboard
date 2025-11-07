@@ -43,7 +43,7 @@ Built for HR leaders and data scientists alike, it enables organizations to **vi
 
 ```mermaid
 flowchart TD
-    A[Raw HR Data (CSV or Database)] -->|Ingestion| B[ETL Scripts]
+    A[Raw HR Data / CSV or Database] -->|Ingestion| B[ETL Scripts]
     B -->|Cleaned Dataset| C[Model Training Engine]
     C -->|Trained Models - PKL Files| D[Streamlit Dashboard]
     D -->|Predictions and Visuals| E[End User]
