@@ -140,9 +140,8 @@ Licensed under the [MIT License](https://github.com/GKTHIRUMARAN/HR-Employee-Ins
 ---
 
 ## 👤 Author
-
 **GK Thirumaran**  
-🎓 *B.Tech — Artificial Intelligence and Data Science*  
+🎓 *B.Tech Artificial Intelligence and Data Science*  
 🌍 *Coimbatore, Tamil Nadu, India*  
-💼 *AI Developer | Data Scientist | HR Analytics Engineer*  
-🔗 [LinkedIn](https://www.linkedin.com/in/thirumarangk-ai) | [Portfolio](https://maranthiru180.wixsite.com/my-site)
+💼 *Aspiring Data Scientist & Analyst | AIML Developer*  
+🔗 [Linkedin](https://www.linkedin.com/in/thirumarangk-ai) | [Porfolio](https://maranthiru180.wixsite.com/my-site)
