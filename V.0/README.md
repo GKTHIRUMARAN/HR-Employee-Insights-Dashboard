@@ -1,17 +1,17 @@
 # 🧩 HR-Employee-Insights-Dashboard — V.0 Prototype Build
 
-> **HR Insight System — Intelligent HR Analytics Platform (Streamlit + Scikit-learn Prototype)**  
+> **HR Insight System — Intelligent HR Analytics Platform (Streamlit + Scikit-learn Prototype)**
 > The foundation of a data-driven HR analytics ecosystem.
 
-![Repo Size](https://img.shields.io/github/repo-size/GKTHIRUMARAN/HR-Employee-Insights-Dashboard?color=brightgreen&style=for-the-badge)
-![License](https://img.shields.io/github/license/GKTHIRUMARAN/HR-Employee-Insights-Dashboard?color=blue&style=for-the-badge)
-![Stars](https://img.shields.io/github/stars/GKTHIRUMARAN/HR-Employee-Insights-Dashboard?color=yellow&style=for-the-badge)
+![Repo Size](https://img.shields.io/github/repo-size/GKTHIRUMARAN/HR-Employee-Insights-Dashboard?color=brightgreen\&style=for-the-badge)
+![License](https://img.shields.io/github/license/GKTHIRUMARAN/HR-Employee-Insights-Dashboard?color=blue\&style=for-the-badge)
+![Stars](https://img.shields.io/github/stars/GKTHIRUMARAN/HR-Employee-Insights-Dashboard?color=yellow\&style=for-the-badge)
 
 ---
 
 ## 🧠 Overview
 
-**HR-Employee-Insights-Dashboard (V.0)** marks the **first prototype phase** of the intelligent HR analytics system.  
+**HR-Employee-Insights-Dashboard (V.0)** marks the **first prototype phase** of the intelligent HR analytics system.
 It transforms static HR datasets into **interactive dashboards and predictive insights**, demonstrating end-to-end functionality — from **data ingestion** to **machine learning predictions** and **visual reporting**.
 
 This prototype focuses on **Streamlit**, **Scikit-learn**, and **Python ETL scripting**, proving the system’s feasibility and establishing the foundation for future full-stack builds with **FastAPI + GCP**.
@@ -22,33 +22,33 @@ This prototype focuses on **Streamlit**, **Scikit-learn**, and **Python ETL scri
 
 To design a **smart HR data engine** capable of:
 
-- Centralizing HR data (employee details, performance, satisfaction, attrition)
-- Generating predictive analytics using ML models
-- Providing dynamic visualization dashboards for HR strategy
-- Building a modular system ready for cloud integration (GCP)
+* Centralizing HR data (employee details, performance, satisfaction, attrition)
+* Generating predictive analytics using ML models
+* Providing dynamic visualization dashboards for HR strategy
+* Building a modular system ready for cloud integration (GCP)
 
 ---
 
 ## ⚙️ Tech Stack
 
-| Layer | Technology | Description |
-| :---- | :---------- | :----------- |
-| **Frontend** | Streamlit | Interactive and lightweight HR analytics UI |
-| **Backend (Local)** | Python | Handles ETL, preprocessing, and model logic |
-| **Database (Prototype)** | SQLite / CSV | Stores processed and cleaned HR data |
-| **Machine Learning** | Scikit-learn | Predictive modeling for attrition and performance |
-| **Visualization** | Matplotlib, Seaborn | Charting and KPI visualizations |
-| **Logging** | Python Logging | Captures ingestion and processing flow |
+| Layer                    | Technology          | Description                                       |
+| :----------------------- | :------------------ | :------------------------------------------------ |
+| **Frontend**             | Streamlit           | Interactive and lightweight HR analytics UI       |
+| **Backend (Local)**      | Python              | Handles ETL, preprocessing, and model logic       |
+| **Database (Prototype)** | SQLite / CSV        | Stores processed and cleaned HR data              |
+| **Machine Learning**     | Scikit-learn        | Predictive modeling for attrition and performance |
+| **Visualization**        | Matplotlib, Seaborn | Charting and KPI visualizations                   |
+| **Logging**              | Python Logging      | Captures ingestion and processing flow            |
 
 ---
 
 ## 🧩 Core Features
 
-- 🧮 **Data Cleaning & ETL** — Automated data preprocessing and transformation.  
-- 📈 **Interactive Dashboards** — Real-time metrics for HR analytics.  
-- 🤖 **Predictive Modeling** — ML models for attrition and performance trends.  
-- 🧠 **Insight Generator** — Provides explainable predictions and key metrics.  
-- 🧾 **Logging & Traceability** — Maintains full log trail for debugging and audit.  
+* 🧮 **Data Cleaning & ETL** — Automated data preprocessing and transformation
+* 📈 **Interactive Dashboards** — Real-time metrics for HR analytics
+* 🤖 **Predictive Modeling** — ML models for attrition and performance trends
+* 🧠 **Insight Generator** — Provides explainable predictions and key metrics
+* 🧾 **Logging & Traceability** — Maintains full log trail for debugging and audit
 
 ---
 
@@ -62,7 +62,7 @@ flowchart TD
     D -->|Predictions & Visuals| E[End User]
     C -->|Logs & Metrics| F[Monitoring / Logs]
     E -->|Input / Refresh| D
-````
+```
 
 ---
 
@@ -71,7 +71,6 @@ flowchart TD
 ```
 │   app.py
 │   requirements.txt
-│   .gitignore
 │
 ├───config
 │       db_config.json
@@ -106,14 +105,14 @@ flowchart TD
 
 ## 🧱 Key Modules
 
-| Module                    | Description                                               |
-| :------------------------ | :-------------------------------------------------------- |
-| **`data_ingestion.py`**   | Reads HR dataset (CSV/API) and initializes database load. |
-| **`data_cleaning.py`**    | Handles nulls, outliers, and encodes categorical data.    |
-| **`model_training.py`**   | Trains models for attrition and performance prediction.   |
-| **`model_prediction.py`** | Loads models and generates dashboard predictions.         |
-| **`run_pipeline.py`**     | Orchestrates complete ETL → ML → dashboard flow.          |
-| **`app.py`**              | Streamlit UI combining visuals and prediction modules.    |
+| Module                    | Description                                              |
+| :------------------------ | :------------------------------------------------------- |
+| **`data_ingestion.py`**   | Reads HR dataset (CSV/API) and initializes database load |
+| **`data_cleaning.py`**    | Handles nulls, outliers, and encodes categorical data    |
+| **`model_training.py`**   | Trains models for attrition and performance prediction   |
+| **`model_prediction.py`** | Loads models and generates dashboard predictions         |
+| **`run_pipeline.py`**     | Orchestrates complete ETL → ML → dashboard flow          |
+| **`app.py`**              | Streamlit UI combining visuals and prediction modules    |
 
 ---
 
@@ -168,20 +167,74 @@ st.dataframe(data.head())
 
 ## 🧠 Internal Logic
 
-1. **Data Ingestion:** Pulls and logs raw HR data.
-2. **Cleaning Process:** Prepares structured data for modeling.
-3. **Model Training:** Builds and saves ML models as `.pkl`.
-4. **Dashboard Visualization:** Streamlit visualizes predictions and HR metrics.
-5. **Logging:** Every step tracked under `/logs`.
+1. **Data Ingestion:** Pulls and logs raw HR data
+2. **Cleaning Process:** Prepares structured data for modeling
+3. **Model Training:** Builds and saves ML models as `.pkl`
+4. **Dashboard Visualization:** Streamlit visualizes predictions and HR metrics
+5. **Logging:** Every step tracked under `/logs`
 
 ---
 
 ## 🚀 Prototype Achievements
 
-✅ Interactive and responsive Streamlit dashboard.
-✅ Functional ML pipeline with `.pkl` model integration.
-✅ Automated ETL process with logged workflows.
-✅ Modular, scalable folder structure ready for expansion.
+✅ Interactive and responsive Streamlit dashboard
+✅ Functional ML pipeline with `.pkl` model integration
+✅ Automated ETL process with logged workflows
+✅ Modular, scalable folder structure ready for expansion
+
+---
+
+## ⚙️ Environment Setup
+
+1. **Clone Repository**
+
+```bash
+git clone https://github.com/GKTHIRUMARAN/HR-Employee-Insights-Dashboard.git
+cd HR-Employee-Insights-Dashboard/V.0
+```
+
+2. **Python Virtual Environment**
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+3. **Install Dependencies**
+
+```bash
+pip install -r requirements.txt
+```
+
+4. **Environment Variables (`.env`)**
+
+Create `.env` in root (example):
+
+```env
+DB_PATH=data/cleaned_hr_data.csv
+LOG_LEVEL=INFO
+MODEL_PATH=models/attrition_model.pkl
+```
+
+5. **Run Application**
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## ✅ Current Capabilities
+
+| Feature                         | Status        |
+| :------------------------------ | :------------ |
+| HR Data Ingestion               | ✅ Implemented |
+| Data Cleaning & Preprocessing   | ✅ Implemented |
+| Predictive Attrition Modeling   | ✅ Implemented |
+| Predictive Performance Modeling | ✅ Implemented |
+| Interactive Streamlit Dashboard | ✅ Implemented |
+| Logging & Traceability          | ✅ Implemented |
+| Modular ETL → ML Pipeline       | ✅ Implemented |
 
 ---
 
@@ -219,10 +272,8 @@ It lays the groundwork for **V.1**, which expands into API-backed cloud scalabil
 ---
 
 ## 👤 Author
-
 **GK Thirumaran**  
-🎓 *B.Tech — Artificial Intelligence & Data Science*  
+🎓 *B.Tech Artificial Intelligence and Data Science*  
 🌍 *Coimbatore, Tamil Nadu, India*  
-💼 *AI Developer | Data Scientist | HR Analytics Engineer*  
-🔗 [LinkedIn](https://www.linkedin.com/in/thirumarangk-ai) | [Portfolio](https://maranthiru180.wixsite.com/my-site)
-
+💼 *Aspiring Data Scientist & Analyst | AIML Developer*  
+🔗 [Linkedin](https://www.linkedin.com/in/thirumarangk-ai) | [Porfolio](https://maranthiru180.wixsite.com/my-site)
